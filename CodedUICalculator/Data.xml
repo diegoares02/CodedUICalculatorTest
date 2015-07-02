@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="urn:Data">
+  <xsd:schema targetNamespace="urn:Data" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+    <xsd:element name="Test">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element type="xsd:string" name="operation"/>
+          <xsd:element type="xsd:string" name="answer"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<x:Test>
+    <x:operation>(3*5-3)/3</x:operation>
+    <x:answer>4</x:answer>
+</x:Test>
+<x:Test>
+    <x:operation>(3+5*6)/0</x:operation>
+    <x:answer>Cannot divide by zero</x:answer>
+</x:Test>
+<x:Test>
+    <x:operation>(-1*6+30)/8</x:operation>
+    <x:answer>3</x:answer>
+</x:Test>
+</Data>
